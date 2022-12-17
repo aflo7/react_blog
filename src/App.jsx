@@ -4,13 +4,14 @@ import axios from "axios"
 
 function App() {
   // const [count, setCount] = useState(0)
+  const prefix = import.meta.env.VITE_PREFIX
+  // const prefix = 'http://localhost:5000/'
   const [posts, setPosts] = useState([])
   const [sortedPosts, setSortedPosts] = useState([])
   const [showPosts, setShowPosts] = useState(true)
   const [singlePost, setSinglePost] = useState({})
   const [commentContent, setCommentContent] = useState("")
   const [commentAuth, setCommentAuth] = useState("")
-
   const imgBank = [
     "planet.jpeg",
     "road.jpeg",
@@ -54,7 +55,7 @@ function App() {
 
   const getAllPosts = () => {
     axios
-      .get("http://localhost:5000/api/posts")
+      .get(`${prefix}api/posts`)
       .then((res) => {
         // successfully retrieved posts
         // console.log(res.data)
@@ -70,7 +71,7 @@ function App() {
 
     axios
       .post(
-        "http://localhost:5000/api/comment",
+        `${prefix}api/comment`,
         {
           author: commentAuth,
           content: commentContent,
