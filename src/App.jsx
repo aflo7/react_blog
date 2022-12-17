@@ -3,7 +3,6 @@ import axios from "axios"
 
 function App() {
   // const [count, setCount] = useState(0)
-  console.log(import.meta.env.VITE_PREFIX)
   // const prefix = 'http://localhost:5000/'
   const [posts, setPosts] = useState([])
   const [sortedPosts, setSortedPosts] = useState([])
@@ -54,7 +53,7 @@ function App() {
 
   const getAllPosts = () => {
     axios
-      .get(`${import.meta.env.VITE_PREFIX}/api/posts`)
+      .get(`https://app1.memberssonly.xyz/api/posts`)
       .then((res) => {
         // successfully retrieved posts
         // console.log(res.data)
@@ -70,7 +69,7 @@ function App() {
 
     axios
       .post(
-        `${import.meta.env.VITE_PREFIX}/api/comment`,
+        `https://app1.memberssonly.xyz/api/comment`,
         {
           author: commentAuth,
           content: commentContent,
