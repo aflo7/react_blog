@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import "./App.css"
 import axios from "axios"
 
 function App() {
@@ -54,6 +53,7 @@ function App() {
   }
 
   const getAllPosts = () => {
+    console.log(`${prefix}api/posts`)
     axios
       .get(`${prefix}api/posts`)
       .then((res) => {
@@ -188,7 +188,7 @@ function App() {
                           <p>{post.content.substring(0, 150)}...</p>
                           <p>{post.poster}</p>
                           <figure>
-                            <img src={`/${getRandImg()}`} alt="" />
+                            <img src={`${getRandImg()}`} alt="" />
                           </figure>
                           <p>Comments: {post.comments.length}</p>
                         </div>
@@ -205,7 +205,7 @@ function App() {
                     return (
                       <div key={i} className="popular_post_wrapper">
                         <img
-                          src="/maarten-deckers-T5nXYXCf50I-unsplash-1500x750.jpg"
+                          src="maarten-deckers-T5nXYXCf50I-unsplash-1500x750.jpg"
                           alt="Architecture"
                         />
                         <div>
