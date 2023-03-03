@@ -1,6 +1,6 @@
-This is frontend1 for this project https://github.com/aflo7/blog
-
 Live website: https://aflo7.github.io/blog_frontend_dec_17/
+
+Backend made with: Node.js
 
 Allows users to read all posts/comments, and write new comments
 
