@@ -53,7 +53,7 @@ function App() {
 
   const getAllPosts = () => {
     axios
-      .get(`https://app1.memberssonly.xyz/api/posts`)
+      .get(`https://app2.memberssonly.xyz/api/posts`)
       .then((res) => {
         // successfully retrieved posts
         // console.log(res.data)
@@ -69,7 +69,7 @@ function App() {
 
     axios
       .post(
-        `https://app1.memberssonly.xyz/api/comment`,
+        `https://app2.memberssonly.xyz/api/comment`,
         {
           author: commentAuth,
           content: commentContent,
@@ -216,65 +216,15 @@ function App() {
                     )
                   })
                 : null}
-
-              {/* <a href="">
-                <img
-                  src="assets/maarten-deckers-T5nXYXCf50I-unsplash-1500x750.jpg"
-                  alt="Architecture"
-                />
-              </a>
-              <p>
-                <a href="#">Donec sit amet</a>
-                <br />
-                <small>
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra
-                </small>
-              </p>
-
-              <a href="#" aria-label="Example">
-                <img
-                  src="assets/daniel-von-appen-tb4heMa-ZRo-unsplash-1500-750.jpg"
-                  alt="Architecture"
-                />
-              </a>
-              <p>
-                <a href="#">Suspendisse potenti</a>
-                <br />
-                <small>
-                  Proin non condimentum tortor. Donec in feugiat sapien.
-                </small>
-              </p>
-
-              <a href="#" aria-label="Example">
-                <img
-                  src="assets/matthew-hamilton-Ru3Ap8TNcsk-unsplash-1500-750.jpg"
-                  alt="Architecture"
-                />
-              </a>
-              <p>
-                <a href="#">Nullam lobortis placerat aliquam</a>
-                <br />
-                <small>
-                  Maecenas vitae nibh blandit dolor commodo egestas vel eget
-                  neque. Praesent semper justo orci, vel imperdiet mi auctor in.
-                </small>
-              </p> */}
             </aside>
           </div>
         </main>
-        {/* ./ Main */}
-        {/* Subscribe */}
 
-        {/* ./ Subscribe */}
-        {/* Footer */}
         <footer className="container">
           <small>
             <a href="https://github.com/aflo7/blog">Source code</a>
           </small>
         </footer>
-        {/* ./ Footer */}
-        {/* Minimal theme switcher */}
       </>
     </div>
   )
