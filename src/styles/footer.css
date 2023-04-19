@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+.arrow-up:hover {
+    color: white;
+}
