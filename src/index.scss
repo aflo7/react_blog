@@ -1,0 +1,127 @@
+$color_1: var(--muted-color);
+$color_2: var(--h3-color);
+$color_3: var(--contrast-hover);
+$background-color_1: #394046;
+$background-color_2: transparent;
+$background-color_3: #495259;
+
+/* Global CSS variables */
+/* Header */
+/* Nav */
+/* Main */
+/* Aside nav */
+:root {
+    --spacing-company: 3rem;
+    --font-weight: 400;
+    --border-radius: 0;
+}
+
+h1 {
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+h4 {
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+hgroup > :last-child {
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+small {
+    color: $color_1;
+}
+.hero {
+    background-color: $background-color_1;
+    background-image: url("/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+header {
+    padding: var(--spacing-company) 0;
+    hgroup > :last-child {
+        color: $color_2;
+    }
+    hgroup {
+        margin-bottom: var(--spacing-company);
+    }
+}
+summary[role="link"].contrast {
+    &:is[aria-current] {
+        background-color: $background-color_2;
+        color: $color_3;
+    }
+}
+:active {
+    background-color: $background-color_2;
+    color: $color_3;
+}
+:focus {
+    background-color: $background-color_2;
+    color: $color_3;
+}
+form.grid {
+    grid-row-gap: 0;
+}
+aside {
+    img {
+        margin-bottom: 0.25rem;
+    }
+    p {
+        margin-bottom: var(--spacing-company);
+        line-height: 1.25;
+    }
+}
+.post_wrapper {
+    padding: 15px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    &:hover {
+        background-color: $background-color_3;
+    }
+}
+footer {
+    margin-bottom: 15px;
+}
+.popular_post_wrapper {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-color_3;
+    }
+}
+.add_comment_title {
+    margin-top: 15px;
+}
+.single_comment {
+    margin-top: 35px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+@media (min-width: 992px) {
+    main {
+        .grid {
+            grid-column-gap: var(--spacing-company);
+            grid-template-columns: auto 25%;
+        }
+    }
+}

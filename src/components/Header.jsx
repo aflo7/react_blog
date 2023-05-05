@@ -7,10 +7,6 @@ function Header() {
                 <hgroup>
                     <h1>Blog</h1>
                     <h2>A place where people can express their opinions</h2>
-                    <p>
-                        Technologies used: React, HTML, CSS, Javascript,
-                        MongoDB, Node.js
-                    </p>
                 </hgroup>
             </header>
         </div>
