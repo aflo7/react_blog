@@ -56,7 +56,7 @@ function App() {
 
     const getAllPosts = () => {
         axios
-            .get(`${import.meta.env.VITE_PREFIX}/api/posts`)
+            .get(`https://app2.memberssonly.xyz/api/posts`)
             .then((res) => {
                 setPosts(res.data)
             })
@@ -68,7 +68,7 @@ function App() {
     const createNewComment = (cpid) => {
         axios
             .post(
-                `${import.meta.env.VITE_PREFIX}/api/comment`,
+                `https://app2.memberssonly.xyz/api/comment`,
                 {
                     author: commentAuth,
                     content: commentContent,
