@@ -1,4 +1,4 @@
-Live website: https://aflo7.github.io/blog_frontend_dec_17/
+Live website: https://aflo7.github.io/react_blog/
 
 Backend made with: Node.js
 Frontend made with: React.js
