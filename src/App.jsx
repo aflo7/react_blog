@@ -56,7 +56,7 @@ function App() {
 
     const getAllPosts = () => {
         axios
-            .get(`https://app2.memberssonly.xyz/api/posts`)
+            .get(`http://3.131.100.53:3001/api/posts`)
             .then((res) => {
                 setPosts(res.data)
             })
@@ -68,7 +68,7 @@ function App() {
     const createNewComment = (cpid) => {
         axios
             .post(
-                `https://app2.memberssonly.xyz/api/comment`,
+                `http://3.131.100.53:3001/api/comment`,
                 {
                     author: commentAuth,
                     content: commentContent,
