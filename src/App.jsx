@@ -54,9 +54,11 @@ function App() {
         }
     }
 
+    // http://3.131.100.53:3001/api/posts/
+
     const getAllPosts = () => {
         axios
-            .get(`http://3.131.100.53:3001/api/posts`)
+            .get(`https://theapi.webapp0000.us/api/posts/`)
             .then((res) => {
                 setPosts(res.data)
             })
@@ -68,7 +70,7 @@ function App() {
     const createNewComment = (cpid) => {
         axios
             .post(
-                `http://3.131.100.53:3001/api/comment`,
+                `https://theapi.webapp0000.us/api/comment`,
                 {
                     author: commentAuth,
                     content: commentContent,
