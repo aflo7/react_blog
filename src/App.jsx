@@ -54,8 +54,6 @@ function App() {
         }
     }
 
-    // http://3.131.100.53:3001/api/posts/
-
     const getAllPosts = () => {
         axios
             .get(`https://theapi.webapp0000.us/api/posts/`)
@@ -176,6 +174,8 @@ function App() {
                                 </form>
                             </div>
                         ) : null}
+<div style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
+
 
                         {showPosts
                             ? posts
@@ -217,6 +217,7 @@ function App() {
                                   })
                                 : null
                             : null}
+                            </div>
                     </section>
                     <PopularPosts
                         sortedPopularPosts={sortedPopularPosts}
