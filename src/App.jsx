@@ -116,7 +116,20 @@ function App() {
     popularPosts();
   }, [posts]);
 
-  return !loading ? (
+  return loading ? (
+    <div
+    className='circular-progress'
+      // style={{
+      //   display: 'flex',
+      //   flexDirection: 'column',
+      //   justifyContent: 'center',
+      //   alignItems: 'center',
+      //   height: '100vh'
+      // }}
+    >
+      <CircularProgress />
+    </div>
+  ) : (
     <div>
       <Header />
 
@@ -217,18 +230,6 @@ function App() {
         </div>
       </main>
       {posts.length > 0 && <Footer scrollToTop={scrollToTop} />}
-    </div>
-  ) : (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh'
-      }}
-    >
-      <CircularProgress />
     </div>
   );
 }
