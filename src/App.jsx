@@ -58,12 +58,13 @@ function App() {
     } else {
       setSortedPopularPosts(sortedArr);
     }
+    setLoading(false);
   }
 
   function createNewComment(cpid) {
     axios
       .post(
-        `https://theapi.webapp0000.us/api/comment`,
+        `https://blogbackend-production-5209.up.railway.app/api/comment`,
         {
           author: commentAuth,
           content: commentContent,
@@ -94,10 +95,10 @@ function App() {
 
   function getAllPosts() {
     axios
-      .get(`https://theapi.webapp0000.us/api/posts/`)
+      .get(`https://blogbackend-production-5209.up.railway.app/api/posts/`)
       .then((res) => {
         setPosts(res.data);
-        setLoading(false);
+        
       })
       .catch((err) => {
         setPosts([]);
@@ -118,7 +119,7 @@ function App() {
 
   return loading ? (
     <div
-    className='circular-progress'
+      className="circular-progress"
       // style={{
       //   display: 'flex',
       //   flexDirection: 'column',
