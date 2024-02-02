@@ -98,7 +98,6 @@ function App() {
       .get(`https://blogbackend-production-5209.up.railway.app/api/posts/`)
       .then((res) => {
         setPosts(res.data);
-        
       })
       .catch((err) => {
         setPosts([]);
@@ -118,16 +117,7 @@ function App() {
   }, [posts]);
 
   return loading ? (
-    <div
-      className="circular-progress"
-      // style={{
-      //   display: 'flex',
-      //   flexDirection: 'column',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   height: '100vh'
-      // }}
-    >
+    <div className="circular-progress">
       <CircularProgress />
     </div>
   ) : (

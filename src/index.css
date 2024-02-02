@@ -58,10 +58,11 @@ aside p {
   padding: 15px;
   cursor: pointer;
   margin-bottom: 15px;
+  outline: 2px solid #495259;
 }
 
 .post_wrapper:hover {
-  outline: 2px solid #495259;
+  outline: 2px solid white;
 }
 
 footer {
@@ -71,6 +72,7 @@ footer {
 .popular_post_wrapper {
   cursor: pointer;
   padding: 15px;
+  outline: 2px solid #495259;
 }
 
 .popular-posts-wrapper {
@@ -80,7 +82,7 @@ footer {
 }
 
 .popular_post_wrapper:hover {
-  outline: 2px solid #495259;
+  outline: 2px solid white;
 }
 
 .add_comment_title {
