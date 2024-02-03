@@ -5,7 +5,7 @@ function Footer({ scrollToTop }) {
   return (
     <footer className="container">
       <small>
-        <a href="https://github.com/aflo7/blog">Source code</a>
+        <a href="https://github.com/aflo7/react_blog">Source code</a>
       </small>
 
       <div>
