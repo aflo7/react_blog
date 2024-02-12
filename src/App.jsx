@@ -64,7 +64,7 @@ function App() {
   function createNewComment(cpid) {
     axios
       .post(
-        `https://blogbackend-production-5209.up.railway.app/api/comment`,
+        `https://blogbackend-production-7692.up.railway.app/api/comment`,
         {
           author: commentAuth,
           content: commentContent,
@@ -95,7 +95,7 @@ function App() {
 
   function getAllPosts() {
     axios
-      .get(`https://blogbackend-production-5209.up.railway.app/api/posts/`)
+      .get(`https://blogbackend-production-7692.up.railway.app/api/posts/`)
       .then((res) => {
         setPosts(res.data);
       })
